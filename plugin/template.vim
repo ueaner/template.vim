@@ -21,7 +21,7 @@ augroup template-create
 augroup end
 
 func s:GetTemplateFile() abort
-    let l:root_dir = fnamemodify(s:current_file, ':h')
+    let l:root_dir = fnamemodify(s:current_file, ':h:h')
     let l:template_path  = l:root_dir . '/templates/'
     let l:template_dummy = l:root_dir . '/templates/dummy'
 
