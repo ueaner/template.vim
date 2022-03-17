@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
+	"runtime"
 )
 
 func main() {
-	fmt.Println("Hello, world!")
+	fmt.Printf("Hello, %s!\n", runtime.Version())
 }
